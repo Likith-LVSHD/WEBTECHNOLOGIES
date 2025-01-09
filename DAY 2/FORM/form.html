@@ -1,0 +1,102 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <head>
+        <title>Impressive Form Design</title>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                background:linear-gradient(120,aqua);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 110vh;
+            }
+            .form{
+                width: 100%;
+                background: rgb(58, 50, 205);
+                backdrop-filter: blur(12px);
+                padding: 28px;
+                border-radius: 15px;
+                max-width: 400px;
+                box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+            }
+            .form h1{
+                text-align: center;
+                font-size: 2.5rem;
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+                margin-bottom: 20px;
+            }
+            .form label{
+                display: block;
+                text-align: left;
+                margin: 8px;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: black;
+            }
+            .form input{
+                width: 100%;
+                padding: 10px;
+                margin: 8px;
+                border-radius: 5px;
+                border: 1px solid black;
+                outline: none;
+                background: white;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                
+            }
+            
+            .form button{
+                width: 100%;
+                padding: 10px;
+                margin: 8px;
+                border-radius: 5px;
+                border: none;
+                background: black;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+                outline: none;
+                transition: all 0.3s ease;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                font-weight: bold;
+            }
+            .form button:hover{
+                background: white;
+                color: black;
+            }
+            p{
+                font-size: 1.2rem;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <h1>Sign Up </h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p>Already have a account ? <a href="">Login</a></p>
+        </div>
+    </body>
+</html>

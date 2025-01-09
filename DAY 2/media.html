@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Media Page</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 2.5;
+            background: linear-gradient(120deg,rgb(127, 131, 255),rgb(238, 144, 192));
+        }
+        header{
+            text-align: center;
+            padding: 50px 26px;
+            background: linear-gradient(150deg,aquamarine);
+
+        }
+        header h1{
+            font-size: 4em;
+            color: whitesmoke;
+            margin-bottom: 30px;
+        }
+        header p{
+            font-size: 1.5em;
+            color: antiquewhite;
+            margin-bottom: 25px;
+        }
+        .mda{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: teal;
+            color: burlywood;
+            text-decoration: wavy;
+            font-size: 1.3em;
+            border-radius: 4px;
+            transition: transform 0.5s , box-shadow 0.5s;
+        }
+        header .mda:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+        }
+        .grid-view{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            padding: 45px;
+            max-width: 1150px;
+        }
+        .grid{
+            background: aquamarine;
+            border-radius: 16px;
+            text-align: center;
+            border-style: ridge;
+            transition: transform 0.5s , box-shadow 0.5s;
+        }
+        .grid:hover{
+            transform: translate(10px);
+            box-shadow: 0 13px 26px rgba(0,0,0,0.6);
+        }
+        .grid h2{
+            font-size: 1.5em;
+            color: brown;
+            margin-bottom: 15px;
+        }
+        .grid p{
+            color: gray;
+            font-size: 1.1em;
+        }
+        footer{
+            text-align: center;
+            padding: 22px;
+            background: #333;
+            color: blueviolet;
+        }
+        @media(max-width:1150px){
+            .grid-view{
+                grid-template-columns: repeat(2,0.8fr);
+            }
+            header h1{
+            font-size: 2.5rem;
+            }
+        }
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes moveIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .grid {
+        animation: moveIn 1s ease-in-out;
+    }
+    header h1 {
+        animation: fadeIn 2s ease-in-out;
+    }
+    eyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes moveIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .grid {
+        animation: moveIn 1s ease-in-out;
+    }
+
+    header h1 {
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .mda {
+        animation: bounce 2s infinite;
+    }
+
+    .grid p {
+        animation: fadeInUp 1.5s ease-in-out;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Landing Page</h1>
+        <p><i>Here we can experience the responsive media</i></p>
+        <a href="https://www.youtube.com/embed/4NLFBUqmI4s?si=6FT8KKAgCU7_wfes" class="mda">Let's begin</a>
+    </header>
+    <section class="grid-view">
+        <div class="grid">
+            <h2>Discover the first page</h2>
+            <p>Here is a inovative design which shows first page</p>
+        </div>
+        <div class="grid">
+            <h2>Discover the second page</h2>
+            <p>Here is a inovative design which shows second page</p>
+        </div>
+        <div class="grid">
+            <h2>Discover the third page</h2>
+            <p>Here is a inovative design which shows third page</p>
+        </div>
+        <div class="grid">
+            <h2>Discover the fourth page</h2>
+            <p>Here is a inovative design which shows fourth page</p>
+        </div>
+        <div class="grid">
+            <h2>Discover the fifth page</h2>
+            <p>Here is a inovative design which shows fifth page</p>
+        </div>
+        <div class="grid">
+            <h2>Discover the sixth page</h2>
+            <p>Here is a inovative design which shows sixth page</p>
+        </div>
+    </section>
+    <footer>2025 Responsive Design . All Rights Reserved</footer>
+</body>
+</html>
