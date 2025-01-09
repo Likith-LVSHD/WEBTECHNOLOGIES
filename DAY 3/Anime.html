@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrolling text </title>
+<style>
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        margin: auto;
+        border: none;
+        background: linear-gradient(120deg, #f6d365, #85fdb9);
+        color: whitesmoke;
+    }
+    .anime {
+        font-size: 1.5em;
+        padding: 10px 20px;
+        background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        animation: scrollBox 10s linear infinite;
+    }
+    @keyframes scrollBox {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="anime">
+        Scrolling Text
+    </div>
+</body>
+</html>

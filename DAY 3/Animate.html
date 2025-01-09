@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            margin: auto;
+            border: none;
+            background: linear-gradient(120deg, #f6d365, #85fdb9);
+            
+            color: whitesmoke
+        }
+        .glow{
+            font-size: 1.5em;
+            padding: 10px 20px;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 20px #f6d365;
+            transition: 0.5s;
+        }
+        button:hover{
+            box-shadow: 0 0 20px #85fdb9;
+            transform: translate3d(0, -5px, 0) perspective(100px) rotateX(-10deg) translateX(10px);
+        }
+        .glow:active{
+            box-shadow: 0 0 20px #ddc4fa41;
+            transform: translate3d(0, 5px, 0) perspective(100px) rotateX(10deg) translateX(-10px);
+        }
+    </style>
+</head>
+<body>
+    <button class="glow">Click Here</button>
+</body>
+</html>

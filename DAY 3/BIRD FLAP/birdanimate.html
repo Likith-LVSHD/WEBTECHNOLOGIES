@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Fly Animation</title>
+    <style>
+        @keyframes fly {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+        }
+
+        h1 {
+            display: inline-block;
+            animation: fly 2s infinite;
+        }
+
+        .bird {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border-radius: 50%;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .wing {
+            position: absolute;
+            width: 50px;
+            height: 20px;
+            background: brown;
+            border-radius: 10px;
+            top: 40px;
+        }
+
+        .left-wing {
+            left: -25px;
+            transform-origin: right center;
+            animation: flap-left 0.5s infinite;
+        }
+
+        .right-wing {
+            right: -25px;
+            transform-origin: left center;
+            animation: flap-right 0.5s infinite;
+        }
+
+        @keyframes flap-left {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(-30deg); }
+        }
+
+        @keyframes flap-right {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(30deg); }
+        }
+
+        .eye {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: black;
+            border-radius: 50%;
+            top: 30px;
+        }
+
+        .eye.left-eye {
+            left: 30px;
+        }
+
+        .eye.right-eye {
+            right: 30px;
+        }
+
+        .beak {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: orange;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            top: 50px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bird Fly Animation</h1>
+    <div class="bird">
+        <div class="wing left-wing"></div>
+        <div class="wing right-wing"></div>
+        <div class="eye left-eye"></div>
+        <div class="eye right-eye"></div>
+        <div class="beak"></div>
+    </div>
+</body>
+</html>
