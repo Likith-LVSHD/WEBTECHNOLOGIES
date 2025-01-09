@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+        nav {
+            width: 25%;
+            float: left;
+            background-color: #f2f2f2;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #ddd;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            padding: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #4caf50;
+            color: white;
+        }
+        iframe {
+            width: 75%;
+            height: calc(100vh - 70px);
+            border: none;
+            float: left;
+            transition: opacity 0.5s ease;
+        }
+        #mainImage {
+            width: 100%;
+            height: 300px;
+            background-image: url('sunset1.jpeg'); 
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Likith V D</h1>
+        <p>Email: likith.vd2023ece@sece.ac.in | Phone: 80723 83746</p>
+    </header>
+
+    <div id="mainImage"></div>
+    <iframe title="myiframe" id="contentFrame" src="home.html"></iframe>
+
+    <nav>
+        <ul>
+            <li><a href="home.html" onclick="loadContent('home.html')">Home</a></li>
+            <li><a href="personal-details.html" onclick="loadContent('personal-details.html')">Personal Details</a></li>
+            <li><a href="content.html" onclick="loadContent('content.html')">Professional Summary</a></li>
+            <li><a href="skills.html" onclick="loadContent('skills.html')">Skills</a></li>
+            <li><a href="education.html" onclick="loadContent('education.html')">Education</a></li>
+            <li><a href="experience.html" onclick="loadContent('experience.html')">Experience</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <script>
+        
+        const iframe = document.getElementById('contentFrame');
+        function loadContent(url) {
+            iframe.style.opacity = 0; 
+            setTimeout(() => {
+                iframe.src = url; 
+                iframe.style.opacity = 1; 
+            }, 500); 
+        }
+    </script>
+</body>
+</html>
