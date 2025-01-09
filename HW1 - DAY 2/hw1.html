@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Heroes and Villains</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: #00ffe1;
+            overflow-x: hidden;
+        }
+        .heading {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+            border-bottom: 2px solid #00ffe1;
+        }
+        .heading h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            color: #ff0099;
+            text-shadow: 0 0 15px rgba(255, 0, 153, 0.8);
+        }
+        .main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            max-width: 1300px;
+            margin: 30px auto;
+        }
+        .section {
+            background: rgba(15, 15, 35, 0.9);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff0099;
+            border-bottom: 3px solid #00ffe1;
+            display: inline-block;
+        }
+        .image {
+            width: 250px;
+            height: 140px;
+            margin: 10px auto;
+            border: 4px solid #00ffe1;
+            border-radius: 15px;
+            transition: transform 0.5s, box-shadow 0.5s;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+        .image:hover {
+            transform: scale(1.4);
+            box-shadow: 0 0 30px rgba(255, 0, 153, 1);
+        }
+        p {
+            font-size: 1.1rem;
+            color: #ffccff;
+        }
+        footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.9);
+            color: #00ffe1;
+            padding: 15px;
+            font-size: 1rem;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <script>
+        function showCharacterInfo(character) {
+            const info = {
+                "Superman": "Superman, also known as Clark Kent, is a Kryptonian who fights for truth and justice.",
+                "Batman": "Batman, also known as Bruce Wayne, is a vigilante and protector of Gotham City.",
+                "Wonder Woman": "Wonder Woman, or Diana Prince, is an Amazon warrior princess with superhuman strength.",
+                "Flash": "Flash, also known as Barry Allen, is the fastest man alive.",
+                "Aquaman": "Aquaman, or Arthur Curry, is the King of Atlantis and protector of the oceans.",
+                "Green Lantern": "Green Lantern wields a power ring to protect the universe as part of the Green Lantern Corps.",
+                "Cyborg": "Cyborg, or Victor Stone, is a technologically advanced hero with incredible abilities.",
+                "Shazam": "Shazam, also known as Billy Batson, transforms into a powerful hero by saying 'Shazam!'.",
+                "Joker": "Joker is Batman's arch-nemesis, known for his chaotic and psychopathic nature.",
+                "Lex Luthor": "Lex Luthor is a genius billionaire and Superman's greatest foe.",
+                "Harley Quinn": "Harley Quinn, formerly Dr. Harleen Quinzel, is a mischievous and unpredictable villainess.",
+                "Darkseid": "Darkseid is a tyrannical ruler of Apokolips and one of the most powerful beings in the universe.",
+                "Deathstroke": "Deathstroke, or Slade Wilson, is a master assassin and mercenary.",
+                "Black Adam": "Black Adam is a powerful antihero and nemesis to Shazam.",
+                "Steppenwolf": "Steppenwolf is a military general from Apokolips and a loyal servant to Darkseid.",
+                "Reverse Flash": "Reverse Flash, also known as Eobard Thawne, is a time-traveling speedster and nemesis of the Flash."
+            };
+            alert(info[character] || "Information not available.");
+        }
+    </script>
+</head>
+<body>
+    <div class="heading">
+        <h1>DC Heroes and Villains</h1>
+    </div>
+    <div class="main">
+        <!-- Heroes Section -->
+        <div>
+            <h2>DC Heroes</h2><hr>
+            <img src="Superman.jpeg" alt="Superman" class="image" onclick="showCharacterInfo('Superman')">
+            <p>Superman</p>
+            <img src="Batman.jpeg" alt="Batman" class="image" onclick="showCharacterInfo('Batman')">
+            <p>Batman</p>
+            <img src="Wonder woman.jpeg" alt="Wonder Woman" class="image" onclick="showCharacterInfo('Wonder Woman')">
+            <p>Wonder Woman</p>
+            <img src="Flash.jpeg" alt="Flash" class="image" onclick="showCharacterInfo('Flash')">
+            <p>Flash</p>
+            <img src="Aquaman.jpeg" alt="Aquaman" class="image" onclick="showCharacterInfo('Aquaman')">
+            <p>Aquaman</p>
+            <img src="Green lantern.jpeg" alt="Green Lantern" class="image" onclick="showCharacterInfo('Green Lantern')">
+            <p>Green Lantern</p>
+            <img src="Cyborg.jpeg" alt="Cyborg" class="image"onclick="showCharacterInfo('Cyborg')">
+            <p>Cyborg</p>
+            <img src="Shazam.jpeg" alt="Shazam" class="image" onclick="showCharacterInfo('Shazam')">
+            <p>Shazam</p>
+        </div>
+
+        <!-- Villains Section -->
+        <div>
+            <h2>DC Villains</h2><hr>
+            <img src="Joker.jpeg" alt="Joker" class="image" onclick="showCharacterInfo('Joker')">
+            <p>Joker</p>
+            <img src="Lex Luther.jpeg" alt="Lex Luthor" class="image" onclick="showCharacterInfo('Lex Luthor')">
+            <p>Lex Luthor</p>
+            <img src="Harley Quinn.jpeg" alt="Harley Quinn" class="image" onclick="showCharacterInfo('Harley Quinn')">
+            <p>Harley Quinn</p>
+            <img src="Darkseid.jpeg" alt="Darkseid" class="image" onclick="showCharacterInfo('Darkseid')">
+            <p>Darkseid</p>
+            <img src="DeathStroke.jpeg" alt="Deathstroke" class="image" onclick="showCharacterInfo('Deathstroke')">
+            <p>Deathstroke</p>
+            <img src="Black Adam.jpeg" alt="Black Adam" class="image" onclick="showCharacterInfo('Black Adam')">
+            <p>Black Adam</p>
+            <img src="Steppenwolf.jpeg" alt="Steppenwolf" class="image" onclick="showCharacterInfo('Steppenwolf')">
+            <p>Steppenwolf</p>
+            <img src="Reverse Flash.jpeg" alt="Reverse Flash" class="image" onclick="showCharacterInfo('Reverse Flash')">
+            <p>Reverse Flash</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 DC Universe - All rights reserved.
+    </footer>
+</body>
+</html>
