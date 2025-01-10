@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date and Time</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.datetime {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.datetime p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+    </style>
+</head>
+<body>
+    <h1>Current Date and Time</h1>
+    <div class="datetime">
+        <p id="date"></p>
+        <p id="time"></p>
+    </div>
+
+    <script>
+        const date = document.getElementById('date');
+        const time = document.getElementById('time');
+
+        const options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        };
+
+        const today = new Date();
+        date.innerHTML = today.toLocaleDateString('en-US', options);
+
+        setInterval(() => {
+            const now = new Date();
+            time.innerHTML = now.toLocaleTimeString('en-US');
+        }, 1000);
+    </script>
+</body>
+</html>
