@@ -1,0 +1,105 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+    background: linear-gradient(to bottom, #FF7E5F, #FEB47B); 
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #FF6F61; 
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.button {
+    padding: 10px 20px;
+    background: #FF6F61; 
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background 0.5s ease;
+    border: none;
+}
+
+.button:hover {
+    background-color: #FEB47B; 
+}
+
+.dark-mode {
+    background: linear-gradient(to bottom, #2C3E50, #FD746C);
+    color: #fff;
+}
+
+.dark-mode .button {
+    background-color: #FD746C; 
+}
+
+.dark-mode .button:hover {
+    background-color: #2C3E50; 
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    background-color: #FF6F61; 
+    right: 20px;
+    border: none;
+    transition: background 0.3s ease;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FEB47B; 
+}
+
+.dark-mode .btn {
+    background: #2C3E50; 
+}
+
+.dark-mode .btn:hover {
+    background: #FD746C; 
+}
+
+/* Responsive design */
+@media (max-width: 780px) {
+    .container {
+        width: 90%;
+    }
+}
