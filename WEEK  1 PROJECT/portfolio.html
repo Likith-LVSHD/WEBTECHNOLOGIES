@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Likith</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#qualification">Qualification</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#form-validation">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="bio">
+            <h2>Bio</h2>
+            <p>Name: Likith</p>
+            <p>Currently Second Year</p>
+            <p>Domain: Networking and Cybersecurity</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Network Security Simulation</strong><br>
+                    <span>Developed a simulation to test network security protocols and intrusion detection systems.</span>
+                </li>
+                <li>
+                    <strong>Cybersecurity Awareness Campaign</strong><br>
+                    <span>Organized a campaign to educate students about cybersecurity best practices.</span>
+                </li>
+                <li>
+                    <strong>Music App Using C Programming</strong><br>
+                    <span>Created a simple music application using C programming. The app allows users to play, pause, and stop music tracks.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 10px;">Network Security</li>
+                <li style="margin-bottom: 10px;">Cybersecurity</li>
+                <li style="margin-bottom: 10px;">Network Administration</li>
+                <li style="margin-bottom: 10px;">Ethical Hacking</li>
+                <li style="margin-bottom: 10px;">Firewall Management</li>
+                <li style="margin-bottom: 10px;">Intrusion Detection Systems</li>
+            </ul>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading about cybersecurity trends</li>
+                <li>Participating in hackathons</li>
+                <li>Playing chess</li>
+                <li>Reading Books</li>
+            </ul>
+        </section>
+
+        <section id="qualification">
+            <h2>Qualification</h2>
+            <ul>
+                <li>
+                    <strong>Currently Second Year</strong><br>
+                    <span>Pursuing a degree in Electronics and Communication Engineering</span>
+                </li>
+                <li>
+                    <strong>Chavara Vidhya Bhavan</strong><br>
+                    <span>Higher Secondary , Graduated in 2023</span>
+                </li>
+                <li>
+                    <strong>Ethical Hacking Basics</strong><br>
+                    <span>Udemy, 2024</span>
+                </li>
+                <li>
+                    <strong>Networking Basics</strong><br>
+                    <span>Cisco Netacad, 2023</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table border="2" cellpadding="0" width="100%">
+                <tr>
+                    <th>DEGREE</th>
+                    <th>INSTITUTION</th>
+                    <th>YEAR</th>
+                    <th>PERCENTAGE</th>
+                </tr>
+                <tr>
+                    <td>ECE</td>
+                    <td>Anna University</td>
+                    <td>2023-Present</td>
+                    <td>8.5 CGPA</td>
+                </tr>
+                <tr>
+                    <td>Schooling</td>
+                    <td>Chavara Vidhya Bhavam</td>
+                    <td>2021-2023</td>
+                    <td>92.3%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: likith.vd2023ece@sece.ac.in</p>
+            <p>Phone: 8072383746</p>
+            <p>LinkedIn: https://in.linkedin.com/in/likith-v-d-4b7055292</p>
+        </section>
+
+        <section id="form-validation">
+            <div class="form-section">
+                <h2>Feedback Form</h2>
+                <p>Please provide your feedback below:</p>
+                <form id="feedbackForm" onsubmit="return validateForm()">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
